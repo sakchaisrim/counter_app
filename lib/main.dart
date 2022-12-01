@@ -46,9 +46,6 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -76,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             ),
             Text(
-              '5',
+              '$_counter',
               style: TextStyle(
                 fontSize: 24.0,
                 color: Colors.red,
@@ -92,15 +89,15 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
             FloatingActionButton(
-              onPressed: () {},
+              onPressed: _incrementCounter,
               child: Icon(Icons.add),
             ),
             FloatingActionButton(
-              onPressed: () {},
+              onPressed: _refreshCounter,
               child: Icon(Icons.refresh),
             ),
             FloatingActionButton(
-              onPressed: () {},
+              onPressed: _decrementCounter,
               child: Icon(Icons.remove),
             ),
           ],
